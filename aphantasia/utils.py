@@ -80,7 +80,7 @@ def cvshow(img):
         y_ = 720  / img.shape[0]
         psize = tuple([int(s * min(x_, y_)) for s in img.shape[:2][::-1]])
         img = cv2.resize(img, psize)
-    cv2.imshow('t', img[:,:,::-1])
+    # cv2.imshow('t', img[:,:,::-1])
     cv2.waitKey(1)
 
 def checkout(img, fname=None, verbose=False):
